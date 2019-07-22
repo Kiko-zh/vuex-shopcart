@@ -1,17 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h3>Vuex购物车</h3>
+    <!-- 商品列表 -->
+    <product></product>
+    <!-- 购物车列表 -->
+    <Cart></Cart>
+    <br />
+    <!-- 小记 -->
+    <Info></Info>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Product from './components/Product'
+import Cart from './components/Cart'
+import Info from './components/Info'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Product,
+    Cart,
+    Info
   }
 }
 </script>
